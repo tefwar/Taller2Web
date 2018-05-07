@@ -1,0 +1,31 @@
+    {
+        "zapatos": [ 
+        {
+            "modelo" : "Converse All Star",
+            "precio" : 125000,
+            "categoria" : "urbano",
+            "codigo" : "ALAD6AA63",
+            "descripcion" : "",
+            "color" : "blanco",
+            "marca" : "Nike"
+        },
+        {
+            "modelo" : "Botenis NUDE ETNICO",
+            "precio" : 140000,
+            "categoria" : "botin",
+            "codigo" : "EJAD6AA63",
+            "descripcion" : "",
+            "color" : "Miel",
+            "marca" : "Mango Tango"
+        },
+        {
+            "modelo" : "Gatululu",
+            "precio" : 90000,
+            "categoria" : "Slip on",
+            "codigo" : "AASD6AA63",
+            "descripcion" : "",
+            "color" : "Gris",
+            "marca" : "Mango Tango"
+        }
+    ]
+}
