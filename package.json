@@ -4,7 +4,7 @@
   "description": "intense_tienda_online",
   "main": "code.js",
   "scripts": {
-    "start": "./node_modules/bin/nodemon code.js",
+    "start": "node_modules/.bin/nodemon code.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "stefania_grimaldo",
