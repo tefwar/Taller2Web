@@ -16,7 +16,7 @@ app.use(express.static('public'));
 MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     if (err) throw err;
 
-    db = client.db('Shoes');
+    db = client.db('zapatos');
 
     // Iniciar servidor
     app.listen(5000);
@@ -26,13 +26,13 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 /*Esta parte es para cargar las paginas*/
 app.get('/', (req, res) => {
 
-    var fuentes = db.collection('shoes')
+    var zapatos = db.collection('zapatos')
         .find();
 
-        fuentes.toArray((err, result) => {
+        zapatos.toArray((err, result) => {
         console.log('Server Connect')
         res.render('index', {
-            shoes: result
+            zapatos: result
         });
     })
 });

@@ -132,29 +132,66 @@ nav {
 }
 
 .banner {
-    #granim-canvas {
         display: block;
         width: 100%;
-        min-width: 200px;
-        height: calc(90vh - 90px);
-        min-height: 100px; //margin: 50px;
-    }
+        height: 600px; //margin: 50px;
+        background-image: url("https://images.unsplash.com/photo-1491898487514-29e95d92e3f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea406718e063a8cafed32f32912f4b96&auto=format&fit=crop&w=2000&q=80");
+        background-size: cover;
+        background-position-y: -300px;
+}
 
-    img{
-        position: absolute;
-        margin-top: -450px;
-        right: 38%;
+.productos{
+    .zapatos {
+        width: 100%;
+        height: 100vh;
+        float: left;
+        padding: 40px 0 0 20%;
+        .mostrar {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            .zapato {
+                width: 20%;
+                //background: $blanco;
+                margin: 20px;
+                border-radius: 6px;
+            
+                .imagen {
+                    width: 100%;
+                    height: 15em;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 6px 6PX;
+                }
+                .descri {
+                    padding: 20px;
+                    height: 8em;
+                    margin-bottom: 2em;
+                    .nom {
+                        font-size: 20px;
+                        margin-bottom: 0.4em;
+                    }
+                }
+                
+            }
+        }
     }
 }
 
 //GALERIA
 .galeria {
+   
+    display: flex;
+    height: auto;
     h1 {
         color: black;
         font-weight: 700;
         margin-bottom: 30px;
+        
     }
     .row {
+        width: 100%;
         display: -ms-flexbox;
         /* IE10 */
         display: flex;
@@ -199,425 +236,13 @@ nav {
     }
 }
 
-//DESCRIPCION
-.descripcion {
-    overflow-x: hidden;
-    .logo {
-        padding-top: 80px;
-        height: 170px;
-        padding-left: 200px;
-    }
-    h2 {
-        padding-left: 10px;
-        margin-top: -10px;
-    } //DESCRIPCION 1
-    .descripcion1 {
-        height: 400px;
-        background-color: black;
-        .izq {
-            height: 100%;
-            float: left;
-            width: 25%;
-            background-image: url("../img/holographic.png");
-            background-size: cover;
-        }
-        .der {
-            height: 100%;
-            float: left;
-            width: 75%;
-            background-color: $negroFondo;
-            p {
-                color: $gris;
-                padding: 120px;
-                padding-left: 240px;
-                font-family: $fuenteNormal;
-                font-size: 20px;
-                font-weight: 200;
-            }
-        }
-    }
-    .descripcion1::after {
-        content: '';
-        margin-top: -155px;
-        background-image: url('http://www.shoekahuna.com/wp-content/uploads/2017/10/3J235_shot2.png');
-        width: 600px;
-        height: 600px;
-        background-size: cover;
-        position: absolute;
-        left: 10px;
-        overflow-x: hidden;
-    } //DESCRIPCION 2
-    .descripcion2 {
-        height: 400px;
-        background-color: white;
-        h2 {
-            font-size: 40px;
-            padding-left: 175px;
-            padding-top: 100px;
-        }
-        .izq {
-            height: 100%;
-            float: left;
-            width: 70%;
-            background-color: white;
-            ul {
-                padding-left: 200px;
-                padding-top: 20px;
-                padding-right: 100px;
-            }
-            li {
-                color: black;
-                padding-left: 10px;
-                font-family: $fuenteNormal;
-                font-size: 20px;
-                font-weight: 200;
-            }
-        }
-        .der {
-            height: 100%;
-            float: left;
-            width: 30%; //background-color: yellow;
-            background-image: url("../img/descripcion2.png");
-            background-size: cover;
-        }
-    } //DESCRIPCION 3
-    .descripcion3 {
-        height: 400px;
-        background-color: $negroFondo;
-        margin-bottom: 100px;
-        overflow-x: hidden;
-        h1 {
-            padding-top: 80px;
-        }
-        h2 {
-            color: $gris;
-            padding-left: 200px;
-        }
-        p {
-            color: $gris;
-            padding: 40px 200px;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            font-weight: 200;
-        }
-    }
-    .descripcion3::before {
-        content: '';
-        margin-top: -100px;
-        background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
-        width: 600px;
-        height: 600px;
-        background-size: cover;
-        position: absolute;
-        left: -265px;
-        overflow-x: hidden;
-    }
-    .descripcion3::after {
-        content: '';
-        margin-top: -450px;
-        background-image: url('http://pluspng.com/img-png/converse-png--1200.png');
-        width: 600px;
-        height: 600px;
-        background-size: cover;
-        position: absolute;
-        right: -265px;
-        transform: scaleX(-1);
-        overflow-x: hidden;
-    }
-}
-
-//INTERACCION
-.interaccion {
-    height: 500px;
-    background-image: url("../img/interaccion.png");
-    background-size: cover;
-    margin-bottom: 40px;
-    .izq {
-        width: 35%;
-        height: 100%;
-        float: left;
-        h1 {
-            color: black;
-            padding-left: 150px;
-            padding-right: 0;
-            margin: 0;
-            font-weight: 700;
-        }
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 5px;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        /* Style the images inside the grid */
-        .column img {
-            opacity: 0.8;
-            cursor: pointer;
-        }
-        .column img:hover {
-            opacity: 1;
-        }
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%;
-            /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-        .column img {
-            margin-top: 20px;
-            vertical-align: middle;
-            margin-left: 80px;
-        }
-        .personalizar {
-            transition: 0.5s;
-            border: 3px solid violet;
-            height: 56px;
-            width: 150px;
-            background-color: white;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            color: black;
-            margin-left: 5px;
-            display: block;
-            margin-top: 20px;
-            margin-left: 150px;
-        }
-        .personalizar:hover {
-            transition: 0.5s;
-            border: 3px solid white;
-            background-color: violet;
-            cursor: pointer;
-        }
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    }
-    .der {
-        width: 65%;
-        height: 100%;
-        float: left;
-        .turntable {
-            display: inline-block;
-            margin: 0px;
-        }
-        .turntable ul {
-            padding: 0px;
-            margin: 0px;
-            margin-left: -80px;
-        }
-        .turntable ul li {
-            list-style-type: none;
-            display: none;
-        }
-        .turntable ul li img {
-            width: 100%;
-        }
-        .turntable ul li.active {
-            display: block;
-        }
-    }
-}
-
-//COMPRA
-.detalles {
-    height: 800px;
-    .izq {
-        width: 50%;
-        height: 100%;
-        float: left;
-        /* The grid: Four equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 16%;
-            padding: 5px;
-        }
-        /* Style the images inside the grid */
-        .column img {
-            opacity: 0.8;
-            cursor: pointer;
-        }
-        .column img:hover {
-            opacity: 1;
-        }
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        /* The expanding image container */
-        .container {
-            //position: relative;
-            width: 86%;
-            height: 70%;
-            margin-left: 154px;
-        }
-        /* Expanding image text */
-        #imgtext {
-            position: absolute;
-            bottom: 15px;
-            left: 0px;
-            color: white;
-            font-size: 20px;
-        }
-    }
-    .der {
-        width: 50%;
-        height: 100%;
-        overflow-y: hidden; // hide vertical
-        overflow-x: hidden; // hide horizontal
-        h2 {
-            margin-top: 150px;
-        }
-        p {
-            color: $gris;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            font-weight: 300;
-        }
-        .Comprar {
-            transition: 0.5s;
-            border: 3px solid violet;
-            height: 56px;
-            width: 150px;
-            background-color: white;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            color: black;
-            margin-left: 5px;
-            display: block;
-            margin-top: 20px;
-        }
-        .Comprar:hover {
-            transition: 0.5s;
-            border: 3px solid black;
-            background-color: violet;
-            cursor: pointer;
-        }
-        .dropbtn {
-            transition: 0.5s;
-            border: 3px solid violet;
-            height: 56px;
-            width: 150px;
-            background-color: white;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            color: black;
-            margin-left: 5px;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-family: $fuenteNormal;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown:hover .dropbtn {
-            transition: 0.5s;
-            border: 3px solid black;
-            background-color: violet;
-            cursor: pointer;
-        }
-    }
-}
-
-//SUSCRIPCION
-.news {
-    height: 350px;
-    background-color: #1a1a1a; //text-align: center;
-    padding-left: 100px;
-    margin-bottom: 50px;
-    p {
-        color: $gris;
-        padding-bottom: 20px;
-        font-family: $fuenteNormal;
-        font-size: 18px;
-        font-weight: 200;
-        padding-left: 200px;
-    }
-    form {
-        padding-left: 200px;
-        input[type=email] {
-            border: 3px solid white;
-            background-color: #1a1a1a;
-            height: 50px;
-            width: 500px;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            font-weight: 200;
-            padding-left: 30px;
-            color: white;
-        }
-        .enviar {
-            border: 3px solid white;
-            height: 56px;
-            width: 150px;
-            background-color: white;
-            font-family: $fuenteNormal;
-            font-size: 20px;
-            color: black;
-            margin-left: 5px;
-        }
-        .enviar:hover {
-            background-color: violet;
-            cursor: pointer;
-        }
-    }
-}
-
-.news::after {
-    content: '';
-    margin-top: -247px;
-    background-image: url('../img/suscri.png');
-    width: 250px;
-    height: 350px;
-    background-size: cover;
-    position: absolute;
-    left: -10px;
-}
-
 //FOOTER
 footer {
-    height: 150px;
-    align-items: flex-start;
-    //display: flex;
+    margin-top: 100px;
+    height: 200px;
+    width: 100%;
+    //align-items: flex-start;
+    display: flex;
     background-color: $negroFondo;
 
 
@@ -643,7 +268,6 @@ footer {
     }
 
     .flex-container {
-        margin-top: -200px;
         height: 100%;
         display: -ms-flexbox;
         display: -webkit-flex;

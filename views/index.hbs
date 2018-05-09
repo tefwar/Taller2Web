@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intense Converse</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
 
@@ -44,12 +44,36 @@
 
    
     <section class="banner">
-       
-        <img src="../img/inicio.png" alt="" width="500px">
+    </section>
+
+    <section class="productos">
+        <div class="zapatos">
+            <div class="mostrar">
+                {{#each zapatos}}
+                <div class="zapato" data-id="{{this._id}}">
+                    <div class="imagen" style="background-image: url({{libro}});"></div>
+                    <div class="descri">
+                        <p class="nom">
+                            <b>{{modelo}}</b>
+                        </p>
+                        <p class="desc">
+                            Color: {{color}}
+                        </p>
+                        <p class="desc">
+                            Marca: {{marca}}
+                        </p>
+                        <p class="desc">
+                            Precio: ${{precio}}
+                        </p>
+                    </div>
+                   
+                </div>
+                {{/each}}
+            </div>
+        </div>
     </section>
 
     <section class="galeria">
-        <h1>TENDENCIAS</h1>
         <!-- Photo Grid -->
         <div class="row">
             <div class="column">
@@ -69,7 +93,7 @@
                 <img src="https://content.nike.com/content/dam/one-nike/en_us/season-2017-fl/converse/le/0706/dt/converse-footpatrol-one-star-suede-low-top-shoes.jpg.transform/full-screen/converse-footpatrol-one-star-suede-low-top-shoes.jpg"
                     style="width:100%">
                 <img src="http://www.planet-aviation.com/wp-content/uploads/2018/02/converse-nba-city-discovery-edition-01.jpg" style="width:100%">
-                <img src="https://s3.amazonaws.com/nikeinc/assets/69977/PrideProduct_03_hd_1600.jpg?1495659440" style="width:100%">
+                
             </div>
         </div>
 
