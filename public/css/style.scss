@@ -140,34 +140,99 @@ nav {
         background-position-y: -300px;
 }
 
+.filtros{
+    width: 100%;
+    margin-top: 10px;
+    h1{
+        color: black;
+    }
+    .filtro{
+        height: 100px;
+        background-color: black;
+
+        .filtro1{
+            display: flex;
+            padding-top: 10px;
+
+        h2{
+            color: white;
+            padding-left: 200px;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+
+        button{
+            margin-left: 10px;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 16px 8px;
+            cursor: pointer;
+            border-radius: 50%;
+
+        }
+
+        .rojo{
+            background-color: darkred;
+        }
+
+        .negro{
+            background-color: gray;
+        }
+
+        .blanco{
+            background-color: white;
+        }
+        .miel{
+            background-color: #edbd71;
+        }
+    }
+    }
+}
+
 .productos{
+    //width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
     .zapatos {
-        width: 100%;
+        display: flex;
         height: 100vh;
         float: left;
-        padding: 40px 0 0 20%;
+        //padding-left: 40px;
         .mostrar {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
+           // width: 100%;
             padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-top: 800px;
             .zapato {
-                width: 20%;
+                //width: 20%;
                 //background: $blanco;
                 margin: 20px;
-                border-radius: 6px;
+                //border-radius: 6px;
             
                 .imagen {
-                    width: 100%;
-                    height: 15em;
-                    background-size: contain;
+                    width: 300px;
+                    height: 300px;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    border-radius: 6px 6PX;
+                    background-position-y: -40px;
                 }
                 .descri {
                     padding: 20px;
                     height: 8em;
-                    margin-bottom: 2em;
+                    //margin-bottom: 2em¿;
                     .nom {
                         font-size: 20px;
                         margin-bottom: 0.4em;
@@ -179,66 +244,9 @@ nav {
     }
 }
 
-//GALERIA
-.galeria {
-   
-    display: flex;
-    height: auto;
-    h1 {
-        color: black;
-        font-weight: 700;
-        margin-bottom: 30px;
-        
-    }
-    .row {
-        width: 100%;
-        display: -ms-flexbox;
-        /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap;
-        /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .menuGaleria11 {
-        height: 240px;
-    }
-    /* Create four equal columns that sits next to each other */
-    .column {
-        -ms-flex: 25%;
-        /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-    }
-    .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-    }
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-        .column {
-            -ms-flex: 50%;
-            flex: 50%;
-            max-width: 50%;
-        }
-    }
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column {
-            -ms-flex: 100%;
-            flex: 100%;
-            max-width: 100%;
-        }
-    }
-}
-
 //FOOTER
 footer {
-    margin-top: 100px;
+    margin-top: 800px;
     height: 200px;
     width: 100%;
     //align-items: flex-start;

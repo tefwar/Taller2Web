@@ -140,38 +140,102 @@ nav input {
   background-position-y: -300px;
 }
 
-.productos .zapatos {
+.filtros {
   width: 100%;
+  margin-top: 10px;
+}
+
+.filtros h1 {
+  color: black;
+}
+
+.filtros .filtro {
+  height: 100px;
+  background-color: black;
+}
+
+.filtros .filtro .filtro1 {
+  display: flex;
+  padding-top: 10px;
+}
+
+.filtros .filtro .filtro1 h2 {
+  color: white;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.filtros .filtro .filtro1 button {
+  margin-left: 10px;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 16px 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.filtros .filtro .filtro1 .rojo {
+  background-color: darkred;
+}
+
+.filtros .filtro .filtro1 .negro {
+  background-color: gray;
+}
+
+.filtros .filtro .filtro1 .blanco {
+  background-color: white;
+}
+
+.filtros .filtro .filtro1 .miel {
+  background-color: #edbd71;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.productos .zapatos {
+  display: flex;
   height: 100vh;
   float: left;
-  padding: 40px 0 0 20%;
 }
 
 .productos .zapatos .mostrar {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 800px;
 }
 
 .productos .zapatos .mostrar .zapato {
-  width: 20%;
   margin: 20px;
-  border-radius: 6px;
 }
 
 .productos .zapatos .mostrar .zapato .imagen {
-  width: 100%;
-  height: 15em;
-  background-size: contain;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 6px 6PX;
+  background-position-y: -40px;
 }
 
 .productos .zapatos .mostrar .zapato .descri {
   padding: 20px;
   height: 8em;
-  margin-bottom: 2em;
 }
 
 .productos .zapatos .mostrar .zapato .descri .nom {
@@ -179,69 +243,8 @@ nav input {
   margin-bottom: 0.4em;
 }
 
-.galeria {
-  display: flex;
-  height: auto;
-  /* Create four equal columns that sits next to each other */
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-}
-
-.galeria h1 {
-  color: black;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.galeria .row {
-  width: 100%;
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap;
-  /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.galeria .menuGaleria11 {
-  height: 240px;
-}
-
-.galeria .column {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.galeria .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 800px) {
-  .galeria .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .galeria .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 footer {
-  margin-top: 100px;
+  margin-top: 800px;
   height: 200px;
   width: 100%;
   display: flex;
