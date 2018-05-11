@@ -5,27 +5,130 @@
             "precio" : 125000,
             "categoria" : "urbano",
             "codigo" : "ALAD6AA63",
-            "descripcion" : "",
-            "color" : "blanco",
-            "marca" : "Nike"
+            "descripcion" : "El Converse Chuck Taylor All Star Leather agrega una parte superior de cuero rica y con textura al zapato más icónico del mundo. El parche clásico, la suela de goma vulcanizada, los ojales de metal cepillado, la puntera de goma reforzada y la autenticidad cultural permanecen intactos.",
+            "color" : "negro",
+            "marca" : "Converse",
+            "link" : "https://sneakerstudio.com/eng_pl_SNEAKER-SHOES-CONVERSE-ALL-STAR-M9166-7467_1.jpg"
         },
         {
             "modelo" : "Botenis NUDE ETNICO",
             "precio" : 140000,
             "categoria" : "botin",
             "codigo" : "EJAD6AA63",
+            "descripcion" : "Se puede usar en cualquier ocasión y cualquier día de la semana, gracias a su flexibilidad y confort.",
+            "color" : "miel",
+            "marca" : "Mango Tango",
+            "link" : "https://i.pinimg.com/originals/48/0a/48/480a4850dfeca4c5afb1bd078359035b.jpg"
+        },
+        {
+            "modelo" : "Hermosura Tropical",
+            "precio" : 160000,
+            "categoria" : "urbano",
+            "codigo" : "EAKD6AA63",
+            "descripcion" : " Botines de CORTE 100% poliuretano, FORRO 90% poliéster, 10% poliuretano, PISO/SUELA 100% caucho estireno butadieno, Altura tacón: 4 cm.",
+            "color" : "blanco",
+            "marca" : "Pretzel",
+            "link" : "https://scontent-lhr3-1.cdninstagram.com/vp/41ccd7e0bca082922f12070a93f5be0b/5B5726E5/t51.2885-15/e35/29737144_2020686268191740_9013179056102834176_n.jpg?se=7&ig_cache_key=MTc1NTg1NTk1MjMxNTUxOTI2NA%3D%3D.2"
+        },
+        {
+            "modelo" : "Botines Tacon Taches",
+            "precio" : 229000,
+            "categoria" : "botin",
+            "codigo" : "ASKJDAS63",
             "descripcion" : "",
-            "color" : "Miel",
-            "marca" : "Mango Tango"
+            "color" : "miel",
+            "marca" : "Bershka",
+            "link" : "https://i.pinimg.com/originals/fb/0f/d3/fb0fd3134d8db9d290ddaa18a83d9e5c.jpg"
+        },
+        {
+            "modelo" : "Botines tacón punta fina",
+            "precio" :  129000,
+            "categoria" : "botin",
+            "codigo" : "EJAD6AA63",
+            "descripcion" : "",
+            "color" : "rojo",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/1104/331/020//1104331020_1_1_3.jpg?t=1512648137926"
+        },
+        {
+            "modelo" : "Botines motero hebillas",
+            "precio" :  169000,
+            "categoria" : "botin",
+            "codigo" : "ASKJASDH3",
+            "descripcion" : "",
+            "color" : "rojo",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/5194/231/022//5194231022_1_1_3.jpg?t=1511802437239"
+        },
+        {
+            "modelo" : "Botines destalonados cremallera",
+            "precio" : 229000,
+            "categoria" : "botin",
+            "codigo" : "ASKJALS63",
+            "descripcion" : "",
+            "color" : "miel",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/1119/331/105//1119331105_1_1_3.jpg?t=1513085453395"
+        },
+        {
+            "modelo" : "Zapatilla acordonada detalle talón",
+            "precio" : 79900,
+            "categoria" : "urbano",
+            "codigo" : "ASK5ASS63",
+            "descripcion" : "",
+            "color" : "blanco",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/1213/331/001//1213331001_1_1_1.jpg?t=1523006779365"
+        },
+        {
+            "modelo" : "Zapatilla blanca mensaje",
+            "precio" : 99900,
+            "categoria" : "urbano",
+            "codigo" : "ASKASDASD3",
+            "descripcion" : "",
+            "color" : "blanco",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/1209/331/001//1209331001_1_1_1.jpg?t=1515502932878"
+        },
+        {
+            "modelo" : "Zapatilla roja lazo",
+            "precio" : 119000,
+            "categoria" : "urbano",
+            "codigo" : "ASD4ADASD3",
+            "descripcion" : "",
+            "color" : "rojo",
+            "marca" : "Bershka",
+            "link" : "https://static.bershka.net/4/photos2/2018/V/1/1/p/1234/331/020//1234331020_2_2_1.jpg?t=1517928927082"
+        },
+        {
+            "modelo" : "TAZIE SF TROPICAL LEAVES",
+            "precio" : 229000,
+            "categoria" : "urbano",
+            "codigo" : "ASD4ADASD3",
+            "descripcion" : "El Vans El Tazie SF, con cordones relajados y simples, presenta una parte superior de lona resistente con detalles gráficos, plantillas UltraCush de talón moldeado con amortiguación mejorada, construcción Pro Vulc Lite y suelas clásica en forma de Waffle. Está hecho con tintas y pegamentos a base de agua.",
+            "color" : "negro",
+            "marca" : "Vans",
+            "link" : "http://www.planetapixel.es/images/large/vans%20toy%20story/p%20Vans%20Mujer%20p%20p%20Tazie%20SF%20p%20p%20TropicTazie%202445_2_LRG.jpg"
+        },
+        {
+            "modelo" : "CLASSIC BLACK FLORAL BLACK",
+            "precio" : 269000,
+            "categoria" : "SlipOn",
+            "codigo" : "ASD4A6SD43",
+            "descripcion" : "El Black Floral Classic SlipOn se caracteriza por su parte superior textil de perfil bajo y resistente, con estampado completo, cuellos acolchados, detalles laterales elásticos y suelas de gofre de goma.",
+            "color" : "negro",
+            "marca" : "Vans",
+            "link" : "http://www.planetapixel.es/images/large/vans%20toy%20story/p%20Vans%20Mujer%20p%20p%20Tazie%20SF%20p%20p%20TropicTazie%202445_2_LRG.jpg"
         },
         {
             "modelo" : "Gatululu",
             "precio" : 90000,
-            "categoria" : "Slip on",
+            "categoria" : "SlipOn",
             "codigo" : "AASD6AA63",
-            "descripcion" : "",
-            "color" : "Gris",
-            "marca" : "Mango Tango"
+            "descripcion" : "Pretzel esta inspirada en la naturaleza, los patrones como las mándalas las cuales nos brindan la oportunidad de hacer diseños textiles plasmados en zapatos cómodos que quedan bien para cualquier día.",
+            "color" : "negro",
+            "marca" : "Mango Tango",
+            "link" : "https://scontent-lhr3-1.cdninstagram.com/vp/f24f5beb584ae27d6a1904f44fcb56e1/5B63A5C2/t51.2885-15/e35/30085096_127198671468356_5515332199609532416_n.jpg?se=7&ig_cache_key=MTc1OTQ2Nzc2OTM2MTE1NzM0OQ%3D%3D.2"
         }
     ]
 }
