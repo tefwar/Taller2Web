@@ -70,13 +70,10 @@
             <div class="mostrar">
                 {{#each zapatos}}
                 <div class="zapato" data-id="{{this._id}}">
-                    <div class="imagen" style="background-image: url({{link}});"></div>
-                    <div class="descri">
+                    <div class="imagen" style="background-image: url({{link}});">
+                         <div class="descri">
                         <p class="nom">
                             <b>{{modelo}}</b>
-                        </p>
-                        <p class="desc">
-                            Color: {{color}}
                         </p>
                         <p class="desc">
                             Marca: {{marca}}
@@ -85,6 +82,8 @@
                             Precio: ${{precio}}
                         </p>
                     </div>
+                    </div>
+                   
                    
                 </div>
                 {{/each}}
