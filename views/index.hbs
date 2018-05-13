@@ -55,10 +55,10 @@
         <div class="filtro">
             <div class="filtro1">
                 <h2>Color:</h2>
-                <button class="blanco"></button>
-                <button class="negro"></button>
-                <button class="rojo"></button>
-                <button class="miel"></button>
+                <button class="blanco"><a class="botonBlanco" href="/?color=blanco"></a></button>
+                <button class="negro"><a class="botonNegro" href="/?color=negro"></a></button>
+                <button class="rojo"><a class="botonRojo" href="/?color=rojo"></a></button>
+                <button class="miel"><a class="botonMiel" href="/?color=miel"></a></button>
             </div>
 
             <div class="filtro2">
@@ -81,6 +81,7 @@
         <div class="zapatos">
             <div class="mostrar">
                 {{#each zapatos}}
+                <a href="/producto/{{modelo}}">   
                 <div class="zapato" data-id="{{this._id}}">
                     <div class="imagen" style="background-image: url({{link}});">
                          <div class="descri">
@@ -96,9 +97,8 @@
                     </div>
                     <button class="comprar"><img src="https://www.iconsdb.com/icons/preview/white/cart-43-xxl.png" alt="" style="vertical-align: middle; width:15px"></button>
                     </div>
-                   
-                   
                 </div>
+                 </a>
                 {{/each}}
             </div>
         </div>

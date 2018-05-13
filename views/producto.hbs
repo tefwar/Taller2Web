@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intense Converse</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
 </head>
 
@@ -39,28 +39,31 @@
             <button type="button" class="buscar">
                 <img src="https://www.iconsdb.com/icons/preview/black/search-13-xxl.png" alt="" style="vertical-align: middle; width:15px">
             </button>
+
+            <button type="button" class="carrito">
+                <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
+            </button>
         </nav>
     </section>
 
    
-    <section class="banner2">
-    </section>
+    <section class="banner2" style="background-image: url({{modelos.link}});"></section>
 
     <section class="productoIndividual">
         <div class="zapatos">
             <div class="mostrar">
-                {{#each zapatos}}
+               
                 <div class="zapato" data-id="{{this._id}}">
-                    <div class="imagen" style="background-image: url({{link}});">
+                    <div class="imagen" style="background-image: url({{modelos.link}});">
                          <div class="descri">
                         <p class="nom">
-                            <b>{{modelo}}</b>
+                            <b>{{modelos.modelo}}</b>
                         </p>
                         <p class="desc">
-                            Marca: {{marca}}
+                            Marca: {{modelos.marca}}
                         </p>
                         <p class="desc">
-                            Precio: ${{precio}}
+                            Precio: ${{modelos.precio}}
                         </p>
                     </div>
                     <button class="comprar"><img src="https://www.iconsdb.com/icons/preview/white/cart-43-xxl.png" alt="" style="vertical-align: middle; width:15px"></button>
@@ -68,7 +71,7 @@
                    
                    
                 </div>
-                {{/each}}
+               
             </div>
         </div>
     </section>

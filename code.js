@@ -36,3 +36,53 @@ app.get('/', (req, res) => {
         });
     })
 });
+
+/*Filtro*/
+
+app.get('/color', (req, res) => {
+    var prod = db.collection('zapatos')
+        .find();
+
+    if (req.query.color)
+        prod.filter({
+            color: req.query.color
+        });
+
+    if (req.query.min)
+        prod.filter({
+            precio: {
+                $gte: parseInt(req.query.min)
+            }
+        });
+
+    prod.toArray((err, result) => {
+        res.render('index', {
+
+            zapatitos: result
+        });
+    })
+});
+
+
+app.get('/producto/:modelo', (req, res) => {
+    db.collection('zapatos').find({
+        zapatos : req.params.zapatos
+    }).toArray((err, result) => {
+        res.render('producto', {
+            modelos: result[0]
+
+        })
+    })
+});
+
+app.get('/productosPorId', (req, res) => {
+    var arreglo = req.query.id.split(',');
+    arreglo = arreglo.map(function(id) {
+        return new ObjectID(id);
+    });
+    var prod = db.collection('zapatos')
+        .find({ _id: { $in: arreglo } })
+        .toArray((err, result) => {
+            res.send(result);
+        });
+});
