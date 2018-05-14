@@ -182,7 +182,7 @@ nav {
             padding-right: 20px;
         }
 
-        button{
+        a{
             margin-left: 10px;
             margin-top: 20px;
             margin-bottom: 30px;
@@ -197,18 +197,18 @@ nav {
 
         }
 
-        .rojo{
+        .botonRojo{
             background-color: darkred;
         }
 
-        .negro{
+        .botonNegro{
             background-color: gray;
         }
 
-        .blanco{
+        .botonBlanco{
             background-color: white;
         }
-        .miel{
+        .botonMiel{
             background-color: #edbd71;
         }
     }
@@ -397,6 +397,7 @@ nav {
 .detalles {
     height: 700px;
     .izq {
+        margin-top: 50px;
         width: 50%;
         height: 100%;
         float: left;
@@ -409,6 +410,7 @@ nav {
             background-size: cover;
             margin: 10px;
             cursor: pointer;
+            opacity: 0.6;
         }
         /* Style the images inside the grid */
         .column img {
@@ -453,6 +455,8 @@ nav {
         height: 100%;
         overflow-y: hidden; // hide vertical
         overflow-x: hidden; // hide horizontal
+        
+        
         h2 {
             margin-top: 100px;
         }
@@ -461,7 +465,10 @@ nav {
             font-family: $fuenteNormal;
             font-size: 20px;
             font-weight: 300;
+            margin-right: 100px;
         }
+
+        
         .Comprar {
             transition: 0.5s;
             border: 3px solid violet;

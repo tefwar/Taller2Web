@@ -51,7 +51,8 @@ app.get('/', (req, res) => {
     prod.toArray((err, result) => {
         res.render('index', {
 
-            zapatitos: result
+            zapatos: result,
+            tittle: "index"
         });
     })
 });
