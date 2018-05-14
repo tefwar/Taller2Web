@@ -39,20 +39,13 @@ app.get('/', (req, res) => {
 
 /*Filtro*/
 
-app.get('/color', (req, res) => {
+app.get('/', (req, res) => {
     var prod = db.collection('zapatos')
         .find();
 
     if (req.query.color)
         prod.filter({
             color: req.query.color
-        });
-
-    if (req.query.min)
-        prod.filter({
-            precio: {
-                $gte: parseInt(req.query.min)
-            }
         });
 
     prod.toArray((err, result) => {
@@ -63,16 +56,14 @@ app.get('/color', (req, res) => {
     })
 });
 
-
+//Cambio de pagina a producto individual
 app.get('/producto/:modelo', (req, res) => {
     db.collection('zapatos').find({
-        zapatos : req.params.zapatos
-    }).toArray((err, result) => {
-        res.render('producto', {
-            modelos: result[0]
+        modelo: req.params.modelo
+    }).toArray((err, result) => res.render('producto', {
+        modelos: result[0]
+    }))
 
-        })
-    })
 });
 
 app.get('/productosPorId', (req, res) => {
@@ -86,3 +77,4 @@ app.get('/productosPorId', (req, res) => {
             res.send(result);
         });
 });
+

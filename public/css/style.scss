@@ -154,7 +154,7 @@ nav {
     height: 300px; //margin: 50px;
     //background-image: url("https://images.unsplash.com/photo-1491898487514-29e95d92e3f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea406718e063a8cafed32f32912f4b96&auto=format&fit=crop&w=2000&q=80");
     background-size: cover;
-    //background-position-y: -300px;
+    background-position-y: -400px;
 
     
 }
@@ -299,7 +299,7 @@ nav {
                     height: 300px;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-position-y: -40px;
+                    //background-position-y: -40px;
                     -webkit-filter: grayscale(0);
 	                filter: grayscale(0) blur(0);
 	                -webkit-transition: .3s ease-in-out;
@@ -389,6 +389,130 @@ nav {
                 }
                 
             }
+        }
+    }
+}
+
+//DescripcionProductoIndividual
+.detalles {
+    height: 700px;
+    .izq {
+        width: 50%;
+        height: 100%;
+        float: left;
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            object-fit: cover;
+            width: 16%;
+            padding: 5px;
+            height: 16%;
+        }
+        /* Style the images inside the grid */
+        .column img {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .column img:hover {
+            opacity: 1;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* The expanding image container */
+        .container {
+            //position: relative;
+            width: 86%;
+            height: 70%;
+            margin-left: 120px;
+            
+        }
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 0px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    .der {
+        width: 50%;
+        height: 100%;
+        overflow-y: hidden; // hide vertical
+        overflow-x: hidden; // hide horizontal
+        h2 {
+            margin-top: 100px;
+        }
+        p {
+            color: $gris;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .Comprar {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+            display: block;
+            margin-top: 20px;
+        }
+        .Comprar:hover {
+            transition: 0.5s;
+            border: 3px solid black;
+            background-color: violet;
+            cursor: pointer;
+        }
+        .dropbtn {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 56px;
+            width: 150px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: $fuenteNormal;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            transition: 0.5s;
+            border: 3px solid black;
+            background-color: violet;
+            cursor: pointer;
         }
     }
 }
