@@ -58,35 +58,31 @@
             <div class="row">
                 <div class="column">
                 </div>
-                <div class="column" onclick="myFunction(this);">
-                    <img src="{{modelos.vista1}}" alt="" style="width:100%" onclick="myFunction(this);">
+                <div class="column" style="background-image: url({{modelos.link}})" onclick="myFunction('{{modelos.link}}');">
+                    <img src="{{modelos.link}}">    
                 </div>
-                <div class="column">
-                    <img src="../img/CONVERSE2.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                <div class="column" style="background-image: url({{modelos.vista1}})" onclick="myFunction('{{modelos.vista1}}');">    
                 </div>
-                <div class="column">
-                    <img src="../img/CONVERSE3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                <div class="column" style="background-image: url({{modelos.vista2}})" onclick="myFunction('{{modelos.vista2}}');">    
                 </div>
-                <div class="column">
-                    <img src="../img/CONVERSE4.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                <div class="column" style="background-image: url({{modelos.vista3}})" onclick="myFunction('{{modelos.vista3}}');">    
                 </div>
             </div>
 
             <div class="container">
-                <img id="expandedImg" src="../img/CONVERSE1.jpg" style="width:78%">
-                <div id="imgtext"></div>
+                <img id="expandedImg" src="{{modelos.vista3}}" style="width:78%">
             </div>
         </div>
         <div class="der">
-            <h2>CONVERSE CHUCK 70 HIGH TOP</h2>
+            <h2>{{modelos.modelo}}</h2>
             <h3>UNISEX SHOE</h3>
-            <p>$255.000</p>
+            <p>${{modelos.precio}}</p>
             </br>
-            <h3>STYLE</h3>
-            <p>M7652-000</p>
+            <h3>Categoria: {{modelos.categoria}}</h3>
+            <p>Código: {{modelos.codigo}}</p>
             </br>
-            <h4>Costo de envio:</h4>
-            <p>Colombia - $10.000</p>
+            <h4>Descripción:</h4>
+            <p>{{modelos.descripcion}}</p>
             </br>
 
             <div class="dropdown">
@@ -114,11 +110,8 @@
 <script>
     function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
+    expandImg.src = imgs;
     expandImg.parentElement.style.display = "block";
-    console.log('Esto Funciona')
 }
 </script>
 

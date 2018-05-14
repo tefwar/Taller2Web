@@ -403,10 +403,12 @@ nav {
         /* The grid: Four equal columns that floats next to each other */
         .column {
             float: left;
-            object-fit: cover;
-            width: 16%;
+            width: 14%;
             padding: 5px;
-            height: 16%;
+            height: 130px;
+            background-size: cover;
+            margin: 10px;
+            cursor: pointer;
         }
         /* Style the images inside the grid */
         .column img {
@@ -414,8 +416,9 @@ nav {
             object-fit: cover;
             opacity: 0.8;
             cursor: pointer;
+            display: none;
         }
-        .column img:hover {
+        .column:hover {
             opacity: 1;
         }
         /* Clear floats after the columns */
@@ -428,8 +431,12 @@ nav {
         .container {
             //position: relative;
             width: 86%;
-            height: 70%;
-            margin-left: 120px;
+            //width: 840px;
+            height: 600px;
+            margin-left: 163px;
+            //background-color: red;
+            background-size: cover; 
+            background-position-y: -50px;
             
         }
         /* Expanding image text */
