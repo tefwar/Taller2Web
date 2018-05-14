@@ -56,6 +56,15 @@ app.get('/', (req, res) => {
     })
 });
 
+//Cambio de pagina
+app.get('/home', (req, res) => {
+    res.render('home', {});
+})
+
+app.get('/', (req, res) => {
+    res.render('index', {});
+})
+
 //Cambio de pagina a producto individual
 app.get('/producto/:modelo', (req, res) => {
     db.collection('zapatos').find({
