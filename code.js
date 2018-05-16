@@ -39,6 +39,11 @@ app.get('/', (req, res) => {
             categoria: req.query.categoria
     });
 
+    if (req.query.marca)
+    prod.filter({
+        marca: req.query.marca
+});
+
     
     prod.toArray((err, result) => {
         res.render('index', {

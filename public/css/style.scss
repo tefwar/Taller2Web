@@ -100,7 +100,7 @@ nav {
     }
 
     .carrito{
-        margin-left: 30px;
+        margin-left: 5px;
         padding: 5px 5px;
     }
     button:hover {
@@ -224,6 +224,56 @@ nav {
     }
 
     .filtro2{
+        display: flex;
+        margin-top: 30px;
+        margin-left: 100px;
+        
+        h2{
+            color: white
+        }
+        .dropbtn {
+            transition: 0.5s;
+            border: 3px solid violet;
+            height: 40px;
+            width: 160px;
+            background-color: white;
+            font-family: $fuenteNormal;
+            font-size: 20px;
+            color: black;
+            margin-left: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: $fuenteNormal;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            transition: 0.5s;
+            border: 3px solid black;
+            background-color: violet;
+            cursor: pointer;
+        }
+    }
+
+    .filtro3{
         display: flex;
         margin-top: 30px;
         margin-left: 100px;
@@ -565,6 +615,7 @@ nav {
 
 //Checking
 .Zapatitos{
+    height: 600px;
     .informacion{
         width: 100%;
         .tituloCarrito{
@@ -595,7 +646,10 @@ nav {
             display: flex;
             width: 55%;
             font-family: $fuenteNormal;
-            margin-top: -1100px;
+            position: absolute;
+            top: 340px;
+            right: -60px;
+            //margin-top: -1100px;
             button {
                 overflow: visible;
               }
