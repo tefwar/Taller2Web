@@ -1,4 +1,5 @@
-const MongoClient = require('mongodb').MongoClient,
+const MongoClient = require('mongodb').MongoClient
+ObjectID = require('mongodb').ObjectID,
     express = require('express'),
     engines = require('consolidate');
 
@@ -23,23 +24,8 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     console.log("Server Connect")
 });
 
-/*Esta parte es para cargar las paginas*/
 app.get('/', (req, res) => {
 
-    var zapatos = db.collection('zapatos')
-        .find();
-
-        zapatos.toArray((err, result) => {
-        console.log('Server Connect')
-        res.render('index', {
-            zapatos: result
-        });
-    })
-});
-
-/*Filtro*/
-
-app.get('/', (req, res) => {
     var prod = db.collection('zapatos')
         .find();
 
@@ -48,11 +34,15 @@ app.get('/', (req, res) => {
             color: req.query.color
         });
 
+    if (req.query.categoria)
+        prod.filter({
+            categoria: req.query.categoria
+    });
+
+    
     prod.toArray((err, result) => {
         res.render('index', {
-
-            zapatos: result,
-            tittle: "index"
+            zapatos: result
         });
     })
 });
@@ -62,9 +52,11 @@ app.get('/home', (req, res) => {
     res.render('home', {});
 })
 
-app.get('/', (req, res) => {
-    res.render('index', {});
-})
+app.get('/checkout', (req, res) => {
+    res.render('checking', {
+        tittle: "Checkout"
+    });
+});
 
 //Cambio de pagina a producto individual
 app.get('/producto/:modelo', (req, res) => {
@@ -76,7 +68,8 @@ app.get('/producto/:modelo', (req, res) => {
 
 });
 
-app.get('/productosPorId', (req, res) => {
+//envia el arreglo a la pagina de checkout
+app.get('/productosPorIds', (req, res) => {
     var arreglo = req.query.id.split(',');
     arreglo = arreglo.map(function(id) {
         return new ObjectID(id);
@@ -87,4 +80,3 @@ app.get('/productosPorId', (req, res) => {
             res.send(result);
         });
 });
-

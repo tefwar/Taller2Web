@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intense Converse</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
@@ -39,16 +39,21 @@
             <button type="button" class="buscar">
                 <img src="https://www.iconsdb.com/icons/preview/black/search-13-xxl.png" alt="" style="vertical-align: middle; width:15px">
             </button>
-
-            <button type="button" class="carrito">
-                <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
-            </button>
+            <a href="/checkout">
+                <button type="button">
+                    <img src="https://www.iconsdb.com/icons/preview/white/cart-73-xxl.png" alt="" style="vertical-align: middle; width:15px">
+                    <span class="carrito">0</span>
+                </button>
+            </a>
         </nav>
     </section>
 
-   
+
     <section class="banner">
     </section>
+    <div class="tituloCarrito">
+                <h1>Tienda</h1>
+            </div>
 
     <section class="filtros">
         <h1>Filtros</h1>
@@ -62,72 +67,85 @@
             </div>
 
             <div class="filtro2">
-                <h2>Marca:</h2>
+                <h2>Categoria:</h2>
                 <div class="dropdown">
-                <button class="dropbtn"></button>
-                <div class="dropdown-content">
-                    <a href="#">Bershka</a>
-                    <a href="#">Mango Tango</a>
-                    <a href="#">Converse</a>
-                    <a href="#">Pretzel</a>
-                    <a href="#">Vans</a>
+                    <button class="dropbtn">Todas</button>
+                    <div class="dropdown-content">
+                        <a href="/?categoria=urbano">Urbano</a>
+                        <a href="/?categoria=SlipOn">Slip on</a>
+                        <a href="/?categoria=botin">Botin</a>
+                    </div>
                 </div>
+
             </div>
-            
-        </div>
     </section>
 
     <section class="productos">
         <div class="zapatos">
             <div class="mostrar">
                 {{#each zapatos}}
-                <a href="/producto/{{modelo}}">   
-                <div class="zapato" data-id="{{this._id}}">
-                    <div class="imagen" style="background-image: url({{link}});">
-                         <div class="descri">
-                        <p class="nom">
-                            <b>{{modelo}}</b>
-                        </p>
-                        <p class="desc">
-                            Marca: {{marca}}
-                        </p>
-                        <p class="desc">
-                            Precio: ${{precio}}
-                        </p>
+                    <div class="zapato" data-id="{{this._id}}">
+                        <a href="/producto/{{modelo}}">
+                        <div class="imagen" style="background-image: url({{link}});">
+                            <div class="descri">
+                                <p class="nom">
+                                    <b>{{modelo}}</b>
+                                </p>
+                                <p class="desc">
+                                    Marca: {{marca}}
+                                </p>
+                                <p class="desc">
+                                    Precio: ${{precio}}
+                                </p>
+                            </div>
+
+                        </div>
+                        </a>
+                        <div>
+                            <button class="agregar" id="comprar">
+                                <img src="https://www.iconsdb.com/icons/preview/white/cart-43-xxl.png" alt="" style="vertical-align: middle; width:15px">
+                            </button>
+                        </div>
                     </div>
-                    <button class="comprar"><img src="https://www.iconsdb.com/icons/preview/white/cart-43-xxl.png" alt="" style="vertical-align: middle; width:15px"></button>
-                    </div>
-                </div>
-                 </a>
+                </a>
                 {{/each}}
             </div>
         </div>
     </section>
- 
-</body>
 
-<footer>
-    <div class="flex-container">
-        <div class="flex-item">
-            <h1>INTENSE</h1>
-            <p>Plataforma de venta de calzado femenino.</p>
-            <br>
-            <p>
-                <a href="#"><b>Condiciones</b></a>
-            </p>
-            <p>
-                <a href="#"><b>Soporte</b></a>
-            </p>
-            <p>
-                <a href="#"><b>Privacidad</b></a>
-            </p>
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h1>INTENSE</h1>
+                <p>Plataforma de venta de calzado femenino.</p>
+                <br>
+                <p>
+                    <a href="#">
+                        <b>Condiciones</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Soporte</b>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <b>Privacidad</b>
+                    </a>
+                </p>
+            </div>
+            <div class="flex-item">
+                <h1>SÍGUENOS</h1>
+                <p>Mantente al tanto de las novedades.</p>
+                <br>
+            </div>
         </div>
-        <div class="flex-item">
-            <h1>SÍGUENOS</h1>
-            <p>Mantente al tanto de las novedades.</p>
-            <br>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/productos.js"></script>
+
+</body>
 
 </html>
